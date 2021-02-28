@@ -1,0 +1,79 @@
+.texto-nav {
+    color: cornsilk;
+    font-size: 26px;
+    text-align: center;
+    box-shadow: darkgrey;
+}
+
+.button_atendimento{
+    margin-top: 50px;
+}
+
+h3{
+    margin-top: 50px;
+    text-align: center;
+    color: royalblue;
+}
+
+button{
+    height: 60px;
+    font-size: 22px;
+}
+
+.table{
+    margin-top: 50px;
+    color: royalblue;
+}
+
+footer{
+    margin-top: 300px;
+    margin-left: -100px;
+    height: 200px;
+    width: 1500px;
+    background-color: black;
+    color: seashell;
+    text-align: center;
+}
+
+/*botoes da index*/
+.btn-beneficio{
+    background-color: crimson;
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-especialidades{
+    background-color: rgb(190, 220, 20);
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-medicos{
+    background-color: rgb(20, 67, 220);
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-localidade{
+    background-color: rgb(12, 110, 20);
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-procedimento{
+    background-color: rgb(187, 20, 220);
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-atendimento{
+    background-color: rgb(220, 60, 20);
+    color: white;
+    height: 60px;
+    font-size: 22px;
+}
