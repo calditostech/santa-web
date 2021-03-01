@@ -52,15 +52,30 @@ include("class/controller.php");
      </tr>
   </thead>
   <tbody>
+  <?php 
+     $crud=new ClassCrud();
+     $BFetch=$crud->selectDB(
+       "*",
+       "atendimentomedico",
+       "",
+       array()
+     );
+
+     while($Fetch=$BFetch->fetch(PDO::FETCH_ASSOC)){
+    ?>
     <tr>
-      <td>{{}}</td>
-      <td>{{}}</td>
-      <td>{{}}</td>
-      <td>{{}}</td>
-      <td>{{}}</td>
-      <td>{{}}</td>
+      <td><?php echo $Fetch['nome_beneficiario']; ?></td>
+      <td><?php echo $Fetch['especialidade']; ?></td>
+      <td><?php echo $Fetch['nome_medico']; ?></td>
+      <td><?php echo $Fetch['endereco']; ?></td>
+      <td><?php echo $Fetch['descricao_procedimento']; ?></td>
+      <td><?php echo $Fetch['data_atendimento']; ?></td>
     </tr>
    
+
+    <?php
+      }
+     ?>
   </tbody>
 </table>
 </div>

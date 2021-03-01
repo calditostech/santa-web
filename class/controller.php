@@ -1,5 +1,5 @@
 <?php
-require_once("conexao.php");
+$pdo = require_once 'conexao.php';
 
 class ClassCrud extends ClassConexao {
 
@@ -27,6 +27,11 @@ class ClassCrud extends ClassConexao {
 
     public function insertDB($Tabela, $Condicao, $Parametros){
         $this->preparedStatements("insert into {$Tabela} values ({$Condicao})" , $Parametros);
+        return $this->crud;
+    }
+
+    public function selectDB($Campos, $Tabela, $Condicao, $Parametros){
+        $this->preparedStatements("select {$Campos} from {$Tabela} values ({$Condicao})" , $Parametros);
         return $this->crud;
     }
 
